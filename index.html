@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#13306b">
 <meta property="og:type" content="website">
 <meta property="og:title" content="2026년 11월, 창원경일고를 직접 만나보세요!">
-<meta property="og:description" content="중3 학생·학부모 초청 행사 3가지 — 원하는 행사를 골라 신청하세요.">
+<meta property="og:description" content="중3 학생·학부모 초청 행사 3가지 — 관심 있는 행사를 모두 신청하실 수 있습니다.">
 <meta property="og:image" content="https://mathlhk15-glitch.github.io/gyeongil-2027-events/og.png">
 <meta property="og:url" content="https://mathlhk15-glitch.github.io/gyeongil-2027-events/">
 <link rel="icon" href="logo.png">
@@ -129,7 +129,7 @@
     </div>
     <span class="badge-invite">중3 학생·학부모 초청</span>
     <h1>2026년 11월,<br>창원경일고를<br><em>직접 만나보세요!</em></h1>
-    <p>참여하실 행사를 골라 신청해 주세요.</p>
+    <p>관심 있는 행사를 모두 신청해 주세요.<br>고교학점제 박람회, 학부모 차담회, 학교설명회는 중복 신청 가능합니다.</p>
   </header>
 
   <main class="list" id="list">
@@ -263,7 +263,7 @@
 
   // 공유: 휴대폰 공유창(카카오톡 등), 안 되면 주소 복사
   document.getElementById('shareBtn').addEventListener('click', function () {
-    var data = { title: '창원경일고 11월 행사 신청', text: '중3 학생·학부모 초청 행사 3가지 — 원하는 행사를 골라 신청하세요.', url: location.href.split('?')[0] };
+    var data = { title: '창원경일고 11월 행사 신청', text: '중3 학생·학부모 초청 행사 3가지 — 관심 있는 행사를 모두 신청하실 수 있습니다.', url: location.href.split('?')[0] };
     if (navigator.share) { navigator.share(data).catch(function () {}); return; }
     var done = function () { say('주소를 복사했습니다'); };
     if (navigator.clipboard) navigator.clipboard.writeText(data.url).then(done, function () { say(data.url); });
